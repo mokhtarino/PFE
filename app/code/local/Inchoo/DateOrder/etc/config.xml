@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Inchoo_DateOrder>
+            <version>1.0.0.0</version>
+        </Inchoo_DateOrder>
+    </modules>
+    <global>
+        <blocks>
+            <operations_adminhtml>
+                <class>Inchoo_DateOrder_Block_Adminhtml</class>
+            </operations_adminhtml>
+        </blocks>
+        <helpers>
+            <operations>
+                <class>Inchoo_DateOrder_Helper</class>
+            </operations>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <inchoo_dateorder after="Mage_Adminhtml">Inchoo_DateOrder_Adminhtml</inchoo_dateorder>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+<!--         <translate> -->
+<!--             <modules> -->
+<!--                 <Inchoo_DateOrder> -->
+<!--                     <files> -->
+<!--                         <default>Inchoo_DateOrder.csv</default> -->
+<!--                     </files> -->
+<!--                 </Inchoo_DateOrder> -->
+<!--             </modules> -->
+<!--         </translate> -->
+        <layout>
+            <updates>
+                <operations>
+                    <file>operations.xml</file>
+                </operations>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

@@ -1,0 +1,9 @@
+<config>
+    <modules>
+        <Riyada_Provider>
+            <active>true</active>
+            <codePool>local</codePool>
+           
+        </Riyada_Provider>
+    </modules>
+</config>

@@ -1,0 +1,59 @@
+
+
+<html>
+
+    <form action="<?php echo Mage::getUrl('Price/index/save') ?>" method="post">
+        <fieldset>
+            <ul>
+                <input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>"  />
+                <li>
+                    <label for="product">product</label>
+                    <select id="Listeprod" name="product" required="true">
+                        <option></option>
+                        <?php
+                        $tab = $this->listproduct();
+                        foreach ($tab as $pro) {
+                            echo "<option id='" . $pro->getId() .
+                            "' value='" . $pro->getId() . "'>" . $pro->load($this->getId())->getName();
+                        }
+                        ?>
+                    </select> 
+                </li>
+                <li>
+
+                    <label for="provider">provider</label>
+                    <select id="Listeprovider" name="provider" required="true">
+                        <option></option>
+                        <?php
+                        $tabprov = $this->listprovider();
+                        foreach ($tabprov as $prov) {
+                            echo "<option id='" . $prov->getId()
+                            . "' value='" . $prov->getId() . "'>" . $prov->getName();
+                        }
+                        ?>
+                    </select> 
+                </li>
+                <li>
+                    <label for="disponible">Disponible</label>
+
+                    <select id="disponible" name="disponible" required="true">
+                        <option id="1" name="disponible" value="1">YES
+                        <option id="2" name="disponible" value="0" selected="true">NO
+                    </select> 
+                </li>
+                <li>
+                    <label for="price">Price</label>
+                    <input type="text" id="price" name="price" required="true"  />
+
+                </li>
+                <li>
+                    <input type="submit" value="Save" />
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+
+</html>
+
+

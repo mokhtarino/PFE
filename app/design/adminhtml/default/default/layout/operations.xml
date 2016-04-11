@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_operations_order_grid>
+        <update handle="formkey"/>
+        <block type="operations_adminhtml/operations_order_grid" name="operations_order.grid" output="toHtml"></block>
+    </adminhtml_operations_order_grid>
+ 
+    <adminhtml_operations_order_index>
+        <reference name="content">
+            <block type="operations_adminhtml/operations_order" name="operations_order.grid.container"></block>
+        </reference>
+    </adminhtml_operations_order_index>
+</layout>

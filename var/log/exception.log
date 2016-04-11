@@ -1,0 +1,1096 @@
+2016-03-19T08:31:54+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: 
+                        Riyada_Provider_Adminhtml_Tabs
+                    ' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('adminhtml/catal...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('adminhtml/catal...', 'product_tabs')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('adminhtml/catal...', 'product_tabs')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-19T08:31:57+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: 
+                        Riyada_Provider_Adminhtml_Tabs
+                    ' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('adminhtml/catal...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('adminhtml/catal...', 'product_tabs')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('adminhtml/catal...', 'product_tabs')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-19T08:32:19+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: 
+                        Riyada_Provider_Adminhtml_Tabs
+                    ' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('adminhtml/catal...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('adminhtml/catal...', 'product_tabs')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('adminhtml/catal...', 'product_tabs')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-19T08:33:23+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: 
+                        Riyada_Provider_Adminhtml_Tabs
+                    ' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('adminhtml/catal...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('adminhtml/catal...', 'product_tabs')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('adminhtml/catal...', 'product_tabs')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-19T09:04:11+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Riyada_Provider_Block_Adminhtml_Catalog_Product_Tab' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('provider/adminh...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php(112): Mage_Core_Model_Layout->createBlock('provider/adminh...')
+#3 [internal function]: Mage_Adminhtml_Block_Widget_Tabs->addTab('my_custom_tab', 'provider/adminh...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#10 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#13 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-03-19T09:06:35+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Riyada_Provider_Block_Adminhtml_Catalog_Product_Tab' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('provider/adminh...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php(112): Mage_Core_Model_Layout->createBlock('provider/adminh...')
+#3 [internal function]: Mage_Adminhtml_Block_Widget_Tabs->addTab('my_custom_tab', 'provider/adminh...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#10 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#13 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-03-19T09:06:46+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Riyada_Provider_Block_Adminhtml_Catalog_Product_Tab' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('provider/adminh...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php(112): Mage_Core_Model_Layout->createBlock('provider/adminh...')
+#3 [internal function]: Mage_Adminhtml_Block_Widget_Tabs->addTab('my_custom', 'provider/adminh...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#10 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#13 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-03-19T12:52:35+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Mage_Provider_Block_Adminhtml_Catalog_Product_Edit_Tab' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('provider/adminh...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php(112): Mage_Core_Model_Layout->createBlock('provider/adminh...')
+#3 [internal function]: Mage_Adminhtml_Block_Widget_Tabs->addTab('my_tab', 'provider/adminh...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#10 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#13 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-03-19T12:53:22+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Mage_Provider_Block_Adminhtml_Catalog_Product_Edit_Tab' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('provider/adminh...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php(112): Mage_Core_Model_Layout->createBlock('provider/adminh...')
+#3 [internal function]: Mage_Adminhtml_Block_Widget_Tabs->addTab('my_tab', 'provider/adminh...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#10 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#13 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-03-24T13:22:01+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:22:31+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:46:59+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:48:32+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:48:53+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:50:48+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:52:02+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:53:48+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:56:04+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-24T13:56:46+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T09:57:31+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T09:57:34+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T09:59:33+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T09:59:52+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T10:01:47+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T10:01:58+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T10:12:29+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T10:12:33+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T10:12:50+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T10:13:59+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Mage_MasteringMagento_Example_Block_Adminhtml_Catalog_Product_Edit_Tab_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('masteringMagent...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php(112): Mage_Core_Model_Layout->createBlock('masteringMagent...')
+#3 [internal function]: Mage_Adminhtml_Block_Widget_Tabs->addTab('my_tab', 'masteringMagent...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#10 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#13 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-03-25T11:00:57+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T11:01:00+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T11:02:04+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T11:02:09+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-03-25T11:02:13+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:15:10+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Riada_Price_Block_Adminhtml_Catalog_Product_TabEdit' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('price/adminhtml...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php(112): Mage_Core_Model_Layout->createBlock('price/adminhtml...')
+#3 [internal function]: Mage_Adminhtml_Block_Widget_Tabs->addTab('my_tab', 'price/adminhtml...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#10 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#13 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-11T11:15:27+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: Riada_Price_Block_Adminhtml_Catalog_Product_TabEdit' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('price/adminhtml...', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Adminhtml/Block/Widget/Tabs.php(112): Mage_Core_Model_Layout->createBlock('price/adminhtml...')
+#3 [internal function]: Mage_Adminhtml_Block_Widget_Tabs->addTab('my_tab_edit', 'price/adminhtml...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(348): call_user_func_array(Array, Array)
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(214): Mage_Core_Model_Layout->_generateAction(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#10 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(250): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->editAction()
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('edit')
+#13 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#14 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#15 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#16 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#17 {main}
+2016-04-11T11:18:14+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:18:19+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:19:04+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:21:50+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:21:55+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:25:11+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:25:20+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:25:21+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:25:27+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:27:07+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:27:51+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:28:41+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:28:45+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:31:19+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:35:52+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:35:57+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T11:37:56+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}
+2016-04-11T12:25:17+00:00 ERR (3): 
+exception 'Mage_Core_Exception' with message 'Invalid block type: MasteringMagento_Example_Block_Event' in /var/www/html/magento/app/Mage.php:595
+Stack trace:
+#0 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(495): Mage::throwException('Invalid block t...')
+#1 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(437): Mage_Core_Model_Layout->_getBlockInstance('example/event', Array)
+#2 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(472): Mage_Core_Model_Layout->createBlock('example/event', 'afficher_monblo...')
+#3 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(239): Mage_Core_Model_Layout->addBlock('example/event', 'afficher_monblo...')
+#4 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(205): Mage_Core_Model_Layout->_generateBlock(Object(Mage_Core_Model_Layout_Element), Object(Mage_Core_Model_Layout_Element))
+#5 /var/www/html/magento/app/code/core/Mage/Core/Model/Layout.php(210): Mage_Core_Model_Layout->generateBlocks(Object(Mage_Core_Model_Layout_Element))
+#6 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(344): Mage_Core_Model_Layout->generateBlocks()
+#7 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(269): Mage_Core_Controller_Varien_Action->generateLayoutBlocks()
+#8 /var/www/html/magento/app/code/core/Mage/Adminhtml/Controller/Action.php(275): Mage_Core_Controller_Varien_Action->loadLayout(Array, true, true)
+#9 /var/www/html/magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php(207): Mage_Adminhtml_Controller_Action->loadLayout(Array)
+#10 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Mage_Adminhtml_Catalog_ProductController->newAction()
+#11 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('new')
+#12 /var/www/html/magento/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#13 /var/www/html/magento/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#14 /var/www/html/magento/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#15 /var/www/html/magento/index.php(83): Mage::run('', 'store')
+#16 {main}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Riyada_Management</name>
+    <version>1.0.0</version>
+    <stability>beta</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Extension for add custom field and management to Riyada QatarbestDeals site. </summary>
+    <description>-Add IMEI attribut to mobile product in the order and invoice.&#xD;
+-Add provider and cost for internal use by Riyada.&#xD;
+-Add delivery date to invoice.</description>
+    <notes>For internal use to Riyada</notes>
+    <authors><author><name>Wajdi Bessassi</name><user>Riyada</user><email>wajdi.sassi@gmail.com</email></author></authors>
+    <date>2015-11-12</date>
+    <time>15:53:34</time>
+    <contents><target name="magelocal"><dir name="Riyada"><dir name="IMEI"><dir name="Block"><dir name="Adminhtml"><dir name="Provider"><dir name="Edit"><file name="Form.php" hash="d846c53263de5083f60d074141e012a8"/></dir><file name="Edit.php" hash="7a176c748cbb39c1595bb0f732897985"/><file name="Grid.php" hash="cd6094b40f5af9a18636b9f0affd86ac"/></dir><file name="Provider.php" hash="51990b022a76fc85c4399daa694b4ea2"/></dir><dir name="Sales"><dir name="Order"><dir name="Email"><dir name="Items"><file name="Default.php" hash="987516b81ba45eb36a5705b2a9058049"/><dir name="Order"><file name="Default.php" hash="043192dba679848a35e4532751e0eae0"/></dir></dir></dir><dir name="View"><dir name="Items"><dir name="Renderer"><file name="Default.php" hash="a717ea7e6860778b9b5f1cddfe58c3f8"/></dir></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="12ddd972983a4edf8846021755a857f6"/></dir><dir name="Model"><file name="CategoriesList.php" hash="c3c8465c84ea0b4c81b9b6d51298f576"/><dir name="Order"><dir name="Pdf"><file name="Invoice.php" hash="74ff6d5344d2d8dca2fa5b357fecef12"/><dir name="Items"><dir name="Invoice"><file name="Default.php" hash="d1e324f5cc4f11067aaec64a4fcd106c"/></dir></dir></dir></dir><file name="Provider.php" hash="6d6ef189fedd5de2181a9fb7fa112d0b"/><dir name="Resource"><dir name="Provider"><file name="Collection.php" hash="254ad52f1ab00a969635c16bcf9ad4fc"/></dir><file name="Provider.php" hash="674748e3bde947a6265451386b636f8b"/></dir></dir><dir name="controllers"><file name="IndexController.php" hash="c149813cd4d356ff8f8dd73e15439d51"/></dir><dir name="data"><dir name="riyada_imei_setup"><file name="data-install-0.1.0.php" hash="93a525a9cfaf63945b55c6b64e1e0017"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="29720fe883688967bbf4e2720a95bb9a"/><file name="config.xml" hash="c9a53e4ed54cf8e05b19c6f1f5c60981"/><file name="system.xml" hash="23d9b752aa4d47b51963cbb81a8c890c"/></dir><dir name="sql"><dir name="riyada_imei_setup"><file name="install-0.1.0.php" hash="740bc27ee9f68da3673def76776155f0"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Riyada_IMEI.xml" hash="182da74502107cc131d2f4a44c1afdfa"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="riyadaImei"><dir name="css"><file name="style.css" hash="4f96026e75b574ca983a8538527753bd"/></dir><dir name="images"><file name="ajax-loader.gif" hash="a51c5608d01acf32df728f299767f82b"/></dir></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="riyada"><dir name="sales"><dir name="order"><dir name="view"><file name="info.phtml" hash="384da594d42b1ccf20cb2f2ecba8388f"/><dir name="items"><dir name="renderer"><file name="default.phtml" hash="da995d1fb166c0e441b5295e97a0b0dd"/></dir></dir><file name="items.phtml" hash="b46429910e71ecc275076388d2e6280c"/></dir></dir></dir></dir></dir><dir name="layout"><file name="imei_customsales.xml" hash="55998e0bdeda72d1701ed63bf47bc5d3"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>7.0.0</max></php></required></dependencies>
+</package>

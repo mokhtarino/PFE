@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE config>
+<!--
+/**
+ * app/code/local/MasteringMagento/Example/etc/config.xml
+ *
+ * This customtabs code is provided for use with the Mastering Magento video
+ * series, by Packt Publishing.
+ *
+ * @author    Franklin P. Strube <franklin.strube@gmail.com>
+ * @category  MasteringMagento
+ * @package   Example
+ * @copyright Copyright (c) 2012 Packt Publishing (http://packtpub.com)
+ */
+-->
+<config>
+    <modules>
+        <Fishpig_Customtabs>
+            <version>5.3.0</version>
+        </Fishpig_Customtabs>
+    </modules>
+    <global>
+        <models>
+            <customtabs>
+                <class>Fishpig_Customtabs_Model</class>
+                <resourceModel>customtabs_resource</resourceModel>
+            </customtabs>
+            <customtabs_resource>
+                <class>Fishpig_Customtabs_Model_Resource</class>
+                <entities>
+                    <event>
+                        <table>example_event</table>
+                    </event>
+                    <event_registrant>
+                        <table>example_event_registrant</table>
+                    </event_registrant>
+                </entities>
+            </customtabs_resource>
+        </models>
+        <resources>
+            <customtabs_setup>
+                <setup>
+                    <module>Fishpig_Customtabs</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </customtabs_setup>
+        </resources>
+        <blocks>
+            <customtabs>
+                <class>Fishpig_Customtabs_Block</class>
+            </customtabs>
+        </blocks>
+        <helpers>
+            <customtabs>
+                <class>Fishpig_Customtabs_Helper</class>
+            </customtabs>
+        </helpers>
+        <catalog>
+            <product>
+                <type>
+                    <event translate="label" module="customtabs">
+                        <label>Event Registration</label>
+                        <model>customtabs/product_type_event</model>
+                        <composite>0</composite>
+                    </event>
+                    <grouped>
+                        <allow_product_types>
+                            <event />
+                        </allow_product_types>
+                    </grouped>
+                    <configurable>
+                        <allow_product_types>
+                            <event />
+                        </allow_product_types>
+                    </configurable>
+                    <bundle>
+                        <allow_product_types>
+                            <event />
+                        </allow_product_types>
+                    </bundle>
+                </type>
+            </product>
+        </catalog>
+    </global>
+    <!-- TODO follow along with the video! -->
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <customtabs before="Mage_Adminhtml">Fishpig_Customtabs_Adminhtml</customtabs>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <routers>
+            <customtabs>
+                <use>standard</use>
+                <args>
+                    <frontName>customtabs</frontName>
+                    <module>Fishpig_Customtabs</module>
+                </args>
+            </customtabs>
+        </routers>
+        <layout>
+            <updates>
+                <customtabs>
+                    <file>customtabs.xml</file>
+                </customtabs>
+            </updates>
+        </layout>
+    </frontend>
+</config>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_sales_order_view>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>riyadaImei/css/style.css</stylesheet>
+            </action>
+        </reference>
+
+        <reference name="order_items">
+            <action method="setTemplate"><template>riyada/sales/order/view/items.phtml</template></action>
+            <action method="addItemRender"><type>default</type><block>adminhtml/sales_order_view_items_renderer_default</block><template>riyada/sales/order/view/items/renderer/default.phtml</template></action>
+        </reference>
+    </adminhtml_sales_order_view>
+    <adminhtml_sales_order_invoice_view>
+        <reference name="order_info">
+            <action method="setTemplate"><template>riyada/sales/order/view/info.phtml</template></action>
+        </reference>
+    </adminhtml_sales_order_invoice_view>
+    <adminhtml_sales_order_invoice_new>
+        <reference name="order_info">
+            <action method="setTemplate"><template>riyada/sales/order/view/info.phtml</template></action>
+        </reference>
+    </adminhtml_sales_order_invoice_new>
+</layout>

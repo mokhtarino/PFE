@@ -1,0 +1,204 @@
+<?php
+//Get the current product
+//$product = Mage::registry('product');
+?>
+
+<div class="entry-edit">
+    <div class="entry-edit-head">
+        <h4 class="icon-head head-edit-form fieldset-legend">Riyada Provider</h4>
+    </div>
+    <div id="group_fields4" class="fieldset fieldset-wide">
+        <h3>Riyada Provider</h3>
+    </div>
+</div>
+<?php $_product = $this->getProduct() ;echo $_product;?>
+<div id="alert_messages_block"><?php echo $this->getMessageHtml() ?></div>
+
+
+<div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">choose provider for this product</h4>
+</div>
+<div class="fieldset">
+
+
+    <div class="grid">
+        <div class="hor-scroll" >
+            <table cellspacing="0" class="data border" id="myTable">
+                <col width="1"/>
+                <col width="1"/>
+                <col width="2" />
+                <col width="1" />
+                <thead>
+                    <tr class="headings">
+                        <th>Provider Name<span class="required">*</span></th>
+
+                        <th>Option <d style="margin-left:67% ">Price</d><d style="margin-left:14% ">Availability</d> </th>
+
+
+
+                <th>Delete</th>
+                </tr>
+                </thead>
+
+                <tbody id="ticket_items_body">
+
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td class="input-price" width="120%">
+
+
+
+                            <br>
+
+
+                        </td>
+
+
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="resulta">                  </div>
+
+        </div>
+    </div>
+</div>
+<table id="myTable">
+
+</table>
+
+
+<button id='b1' type='button'  class='button'><span><span><span>Add Provider</span></span></span></button>
+<button id='b3' type='button'    class='button'><span><span><span>save</span></span></span></button>
+
+
+<script >
+
+    function save() {
+        
+        <?php  $product = $this->getProduct();
+                Mage::register('productid',$product);
+                
+                
+                
+                ?>
+        mytab = new Array();
+        var tab = document.body.select('[name=provider]');
+        var j = 1;
+        var i = 0;
+        var k = 0;
+        row = new Array();
+        row2 = new Array();
+        for (h = 0; h < tab.length; h++) {
+            mytab[h]=new Array();
+            if (h != 0)
+             k=0;
+            row = tab[h].getElementsByTagName('select');
+            row2 = tab[h].getElementsByTagName('input');
+            mytab[h][k] = row[0].value;
+            j = 1;
+            i = 0;
+            
+            while (j < row.length) {
+
+                mytab[h][k + 1] = row2[i].value
+                mytab[h][k + 2] = row2[i + 1].value
+                mytab[h][k + 3] = row[j].value;
+                j++;
+                i = i + 2;
+                k = k + 3;
+            }
+
+        }
+
+
+        console.log(mytab)
+        return mytab;
+
+    }
+
+
+    function myDeleteFunction(o) {
+        var p = o.parentNode.parentNode;
+        p.parentNode.removeChild(p);
+        // document.getElementById("myTable").deleteRow(this.id);
+    }
+    var index = 1;
+    function myaddFunction(o) {
+        var btn = document.createElement('div');
+        btn.id = index;
+        btn.innerHTML = "<input type='text'  name='variety' required='true' style='width:70%' placeholder='insert  color and/or mobile capacity'><input type='text' required='true' style='width:17%' placeholder='Price'><select><option value='1'>InStock <option value='0'>OutOfStock</select><br><button onclick='myaddFunction(this)'>add</button>";
+
+        var p = o.parentNode;
+        p.appendChild(btn);
+        p.removeChild(o);
+        //  var d=  document.createElement()
+        index++;
+    }
+
+
+
+
+
+
+</script>
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+
+
+
+
+        <script  type="text/javascript"  src="<?php echo $this->getJsUrl('lib/jquery/jquery-1.10.2.js') ?>"></script>
+        <script>jQuery.noConflict()</script>
+        <script  type="text/javascript">
+            jQuery(document).ready(function ($) {
+
+            var ino = 1;
+                    jQuery(function () {
+                    $("#b1").click(function () {
+                    $(this).parent('tr').attr('id', ino);
+                            jQuery.ajax({
+                            url: "<?php echo Mage::getUrl('price/index/add'); ?>"
+
+                            }).done(function (data) {
+                    $('#myTable').append(data);
+                    });
+                            ino++;
+                    });
+                    });
+                    //save methode ajax      
+                    jQuery(function () {
+                    $("#b3").click(function () {
+                    mytable = new Array();
+                            mytable = save();
+                            jQuery.ajax({
+                            url: "<?php echo Mage::getUrl('price/index/saved'); ?>",
+                                    data:{ mytable : mytable
+                                
+                                           },
+                                    
+                                    
+                                   
+                                    type: 'POST',
+                                    
+                                    
+                                   
+                            }).done(function (data) {
+                    alert(data);
+                    });
+                    });
+                    });
+            });
+
+
+
+        </script>  
+
+    </body>
+</html>

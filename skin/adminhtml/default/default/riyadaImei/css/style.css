@@ -1,0 +1,17 @@
+.load_ajax_on{
+    margin-left: 5px;
+}
+
+.load_ajax_off{
+    display: none;
+    margin-left: 5px;}
+
+#status-area .flash_message .success{
+    padding: 5px;
+    color: #49ef70 !important;
+}
+
+#status-area .flash_message .fail{
+    padding: 5px;
+    color: red !important;
+}

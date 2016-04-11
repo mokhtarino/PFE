@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <riyada>
+            <label>Riyada</label>
+            <sort_order>100</sort_order>
+        </riyada>
+    </tabs>
+    <sections>
+        <imei>
+            <class>separator-top</class>
+            <label>IMEI</label>
+            <tab>riyada</tab>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <sort_order>33</sort_order>
+            <groups>
+                <imei_categories>
+                    <label>IMEI Categories</label>
+                    <frontend_type>text</frontend_type>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>1</sort_order>
+                    <fields>
+                        <categories translate="label comment">
+                            <label>IMEI Categories</label>
+                            <comment>Categories to apply IMEI attribute</comment>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>riyada_imei/categoriesList</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </categories>
+                    </fields>
+                </imei_categories>
+            </groups>
+        </imei>
+    </sections>
+</config>

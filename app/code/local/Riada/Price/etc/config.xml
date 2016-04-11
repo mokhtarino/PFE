@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Riada_Price>
+            <version>1.0.0</version>
+        </Riada_Price>
+    </modules>
+    <frontend>
+        <routers>
+            <price>
+                <use>standard</use>
+                <args>
+                    <module>Riada_Price</module>
+                    <frontName>Price</frontName>
+                </args>
+            </price>
+        </routers>
+        
+        <layout>
+            <updates>
+                <price>
+                    <file>price.xml</file>
+                </price>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <test>
+                <use>admin</use>
+                <args>
+                    <module>Riada_Price</module>
+                    <frontName>adminprice</frontName>
+                </args>
+            </test>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <price>
+                    <file>price.xml</file>
+                </price>
+            </updates>
+        </layout>
+       
+        <menu>
+            <price translate="title" module="adminhtml">
+                <title>Manage Whole sale Prices</title>
+                <sort_order>1</sort_order>
+                <children>
+                    <set_time>
+                        <title>Manage Prices</title>
+                        <action>adminprice/adminhtml_index/</action>
+                    </set_time>
+                </children>
+            </price>
+        </menu>
+       
+    </adminhtml>
+    <global>
+        
+        <models>
+            <price>
+                <class>Riada_Price_Model</class>
+                <resourceModel>price_resource</resourceModel>
+            </price>
+            <price_resource>
+            
+                <class>Riada_Price_Model_Resource</class>
+                <entities>
+                    <price>
+                        <table>riyada_price</table>
+                    </price>
+                </entities>
+            
+            </price_resource>
+        </models>
+        <blocks>
+           
+            <price>
+                <class>Riada_Price_Block</class>
+            </price>
+            
+            
+        </blocks>
+            
+    </global>
+</config>

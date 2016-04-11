@@ -1,0 +1,33 @@
+<layout version="0.1.0">
+    <default>
+        <reference name="content">
+        </reference>
+    </default>
+    <price_index_index>
+        <reference name="content">
+            <block type="price/price"  name="afficher_monbloc"
+                       template="price/afficher.phtml" />
+        </reference>
+    </price_index_index>
+    
+    <adminhtml_catalog_product_new>
+        <reference name="product_tabs">
+            <action method="addTab">
+                <name>my_tab</name>
+                <block >price/adminhtml_catalog_product_tabNew</block>
+            </action>
+   
+        </reference>
+    </adminhtml_catalog_product_new>
+    <adminhtml_catalog_product_edit>
+        <reference name="product_tabs">
+            <action method="addTab">
+                <name>my_tab</name>
+                <block  template="price/catalog/product/tabEdit.phtml">price/adminhtml_catalog_product_tab</block>
+            </action>
+   
+        </reference>
+    </adminhtml_catalog_product_edit>
+    
+   
+</layout>

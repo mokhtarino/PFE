@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <riyada module="riyada_imei">
+            <title>Riyada Management</title>
+            <children>
+                <riyada_providers>
+                    <title>Manage Providers</title>
+                    <sort_order>1</sort_order>
+                    <action>custominvoice/index</action>
+                </riyada_providers>
+            </children>
+        </riyada>
+    </menu>
+
+    <acl>
+
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <imei translate="title" module="riyada_imei">
+                                        <title>IMEI custom invoice</title>
+                                    </imei>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <riyada module="riyada_imei">
+                        <title>Riyada Management</title>
+                        <children>
+                            <riyada_providers>
+                                <title>Manage Providers</title>
+                                <sort_order>1</sort_order>
+                                <action>custominvoice/index</action>
+                            </riyada_providers>
+                        </children>
+                    </riyada>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
