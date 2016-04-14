@@ -12,7 +12,7 @@ implements Mage_Adminhtml_Block_Widget_Tab_Interface {
 	{
 		parent::_construct();
 		
-		$this->setTemplate('price/catalog/product/tabEdit.phtml');
+		$this->setTemplate('price/catalog/product/tab.phtml');
 	}
 	
 	/**

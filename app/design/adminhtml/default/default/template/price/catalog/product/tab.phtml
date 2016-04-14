@@ -59,16 +59,80 @@
                         <td>
                         </td>
                     </tr>
+                    
+                           <?php
+                
+                
+                 $idProd = $this->getProduct();
+        $collectProv= Mage::getModel('price/price')->getCollection()
+                ->addFieldToSelect('id_provider')
+                ->addFieldToFilter('id_product', $idProd)
+                ->setOrder('id_provider', 'asc')
+                ->distinct(true)
+                ->getData();
+      
+        $collection = Mage::getModel('riyada_imei/provider')->getCollection();
+         $options = (Mage::getModel('price/price')->optionjs($collection));
+
+      foreach ($collectProv as $pro) {
+         $id_provider= $pro['id_provider'];
+         $collect= Mage::getModel('price/price')->getCollection()
+                ->addFieldToSelect('id')
+                ->addFieldToSelect('variety')
+                ->addFieldToSelect('price')
+                ->addFieldToSelect('availability')
+                 
+                ->addFieldToFilter('id_product', $idProd)
+                ->addFieldToFilter('id_provider', $id_provider)
+                ->setOrder('id', 'asc')
+                ->distinct(true)
+                ->getData();
+        
+           echo ("<tr name='provider' id='provider'>
+            <td><select style='font-size:130%;' id='pro' name='pro' >");
+               foreach ($options as $prov) {
+                   if($prov['value']==$id_provider)
+                       echo" <option value=" . $prov['value'] . " selected>" . $prov['label'] . "</option>";
+                           else
+                    echo "<option value=" . $prov['value'] . ">" . $prov['label'] . "</option></select></td><td><div>";
+                }
+
+        foreach ($collect as $row){
+            if($row['availability']==0)
+                $availability="<option><option value='1'>InStock <option value='0' selected>OutOfStock";
+               else
+      $availability="<option><option value='1' selected>InStock <option value='0'>OutOfStock";
+ 
+                echo ("
+
+       <id hidden>".$row['id']."</id>
+           <div>
+<input type='text'  value='".$row['variety']."' required='true' style='width:70%' name='variety' placeholder='insert  color and/or mobile capacity'><input value='".$row['price']."' type='text' required='true' placeHolder='price' style='width:17%' name='price' ><select>".$availability."</select></br></div>");
+
+                ;
+            }
+        echo "<button onclick='myaddFunction(this)' type='button'>add</button></di></td><td><button  type='button' onclick='myDeleteFunction(this)' class='scalable delete icon-btn delete-ticket-item'><span><span><span>Delete</span></span></span></button></td></tr>";
+        
+        }
+                
+                
+                ?>
+                    
                 </tbody>
+                
+         
             </table>
-            <div id="resulta">                  </div>
+            <div id="resulta">     
+            
+            
+            
+            
+            </div>
 
         </div>
     </div>
 </div>
-<table id="myTable">
 
-</table>
 
 
 <button id='b1' type='button'  class='button'><span><span><span>Add Provider</span></span></span></button>
@@ -78,13 +142,7 @@
 <script >
 
     function save() {
-        
-        <?php  $product = $this->getProduct();
-                Mage::register('productid',$product);
-                
-                
-                
-                ?>
+       
         mytab = new Array();
         var tab = document.body.select('[name=provider]');
         var j = 1;
@@ -92,18 +150,25 @@
         var k = 0;
         row = new Array();
         row2 = new Array();
+        row3 = new Array();
+        rowID = new Array();
+          var n=0;
         for (h = 0; h < tab.length; h++) {
             mytab[h]=new Array();
+            
             if (h != 0)
              k=0;
             row = tab[h].getElementsByTagName('select');
             row2 = tab[h].getElementsByTagName('input');
+            row3 = tab[h].getElementsByTagName('id');
+            
             mytab[h][k] = row[0].value;
             j = 1;
             i = 0;
             
             while (j < row.length) {
-
+                rowID[n]=row3[j-1];
+                n++;
                 mytab[h][k + 1] = row2[i].value
                 mytab[h][k + 2] = row2[i + 1].value
                 mytab[h][k + 3] = row[j].value;
@@ -115,10 +180,47 @@
         }
 
 
-        console.log(mytab)
+        console.log(rowID)
         return mytab;
 
     }
+
+//return id
+function saveID() {
+        
+        
+        
+        var tab = document.body.select('[name=provider]');
+        
+        row = new Array();
+        
+        row3 = new Array();
+        rowID = new Array();
+          var n=0;
+        for (h = 0; h < tab.length; h++) {
+           
+            if (h != 0)
+         var j=0;
+            
+            while (j < row.length) {
+                rowID[n]=row3[j];
+                n++;
+                
+                j++;
+               
+            }
+
+        }
+
+
+        console.log(rowID);
+        return rowID;
+        
+
+    }
+
+
+
 
 
     function myDeleteFunction(o) {
@@ -130,7 +232,7 @@
     function myaddFunction(o) {
         var btn = document.createElement('div');
         btn.id = index;
-        btn.innerHTML = "<input type='text'  name='variety' required='true' style='width:70%' placeholder='insert  color and/or mobile capacity'><input type='text' required='true' style='width:17%' placeholder='Price'><select><option value='1'>InStock <option value='0'>OutOfStock</select><br><button onclick='myaddFunction(this)'>add</button>";
+        btn.innerHTML = "<id>1</id><input type='text'  name='variety' required='true' style='width:70%' placeholder='insert  color and/or mobile capacity'><input type='text' required='true' style='width:17%' placeholder='Price'><select><option value='1'>InStock <option value='0'>OutOfStock</select><br><button onclick='myaddFunction(this)'>add</button>";
 
         var p = o.parentNode;
         p.appendChild(btn);
@@ -177,15 +279,14 @@
                     $("#b3").click(function () {
                     mytable = new Array();
                             mytable = save();
+                            lesID= saveID();
                             jQuery.ajax({
                             url: "<?php echo Mage::getUrl('price/index/saved'); ?>",
-                                    data:{ mytable : mytable
-                                
-                                           },
-                                    
-                                    
-                                   
-                                    type: 'POST',
+                            data:{ mytable : mytable,
+                                    lesID: lesID,
+                                 prodId: "<?php echo $this->getProduct()  ?>" } ,
+                            
+                            type: 'POST',
                                     
                                     
                                    

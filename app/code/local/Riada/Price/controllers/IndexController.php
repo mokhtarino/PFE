@@ -10,69 +10,78 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
         $this->renderLayout();
     }
 
-    function ajaxAction() {
-        print("<h1>hello from ajax controller<h1>");
-    }
-
     function savedAction() {
         $array = $this->getRequest()->getPost('mytable');
         $product = $this->getRequest()->getPost('prodId');
-       $arr= $this->reArrayAction($array);
-      
-      
-       foreach ($arr as $a) {
-           $prod=$product;
-           $prov=$a[0];
-           $variety=$a[1];
-           $price=$a[2];
-           $avail=$a[3];
-         if (isset($prod)&&isset($avail)&&isset($variety)&&isset($price))
-             {
-            //on cree notre objet et on l'enregistre en base
-            try {
+        $arr = $this->reArrayAction($array);
+        if (!empty($array)) {
+            $n = 0;
+            foreach ($arr as $a) {
+
+                $prod = $product;
+                $prov = $a[0];
+                $variety = $a[1];
+                $price = $a[2];
+                $avail = $a[3];
+                if (isset($prod) && $prod != '') {
+                    if (isset($avail) && $avail != '' && isset($variety) && $variety != '' && isset($price) && $price != '') {
+                        $test = false;
+                        $item = array();
+                        //on cree notre objet et on l'enregistre en base
+                        try {
 
 
 
-                $itm = Mage::getModel('price/price');
-                $itm->setData('id_product', $prod);
-                $itm->setData('id_provider', $prov);
-                $itm->setData('price', $price);
-                $itm->setData('availability', $avail);
-                $itm->setData('variety', $variety);
-                $itm->save();
-                echo "insertion avec succes";
-            } catch (Exception $e) {
-                Mage::getSingleton('adminhtml/session')->addError("Message"); 
-                echo "deplucated or incomplete entry";}
-        }
-          else  echo "deplucated or incomplete entry";      
-       }
-       
+                            $itm = Mage::getModel('price/price');
+
+                            $itm->setData('id_product', $prod);
+                            $itm->setData('id_provider', $prov);
+                            $itm->setData('price', $price);
+                            $itm->setData('availability', $avail);
+                            $itm->setData('variety', $variety);
+                            $itm->save();
+                            $n++;
+                            echo "row" . ($n + 1) . "added successfuly \n";
+                        } catch (Exception $e) {
+                            Mage::getSingleton('adminhtml/session')->addError("Message");
+                            echo " duplicated or incorrect  entry at row :" . ($n + 1);
+                            break;
+                        }
+                    } else {
+                        echo " all fields are required ";
+                        break;
+                    }
+                } else {
+                    echo "you mast save the product to choose a provider";
+                }
+            }
+        } else
+            echo "add a provider";
     }
-    function reArrayAction($t){
-            
-            $a=array();
-            $c=0;
-        for($j=0;$j<sizeof($t);$j++){
-            
-             $k=1;
-            
-        while ($k+2<sizeof($t[$j])){
-            
-          $a[$c][0]=$t[$j][0];
-          $a[$c][1]=$t[$j][$k];
-          $a[$c][2]=$t[$j][$k+1];
-          $a[$c][3]=$t[$j][$k+2];
-          
-          $k=$k+3;
-            $c++; 
-        }
-       
-       
+
+    function reArrayAction($t) {
+
+        $a = array();
+        $c = 0;
+        for ($j = 0; $j < sizeof($t); $j++) {
+
+            $k = 1;
+
+            while ($k + 2 < sizeof($t[$j])) {
+
+                $a[$c][0] = $t[$j][0];
+                $a[$c][1] = $t[$j][$k];
+                $a[$c][2] = $t[$j][$k + 1];
+                $a[$c][3] = $t[$j][$k + 2];
+
+                $k = $k + 3;
+                $c++;
+            }
         }
         return $a;
     }
-                function addAction() {
+
+    function addAction() {
         $collection = Mage::getModel('riyada_imei/provider')->getCollection();
         $options = (Mage::getModel('price/price')->optionjs($collection));
 
@@ -88,14 +97,14 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
 
         echo ("
 </select></td>
-       <td><div>
+       <td><div><id >1</id>
 <input type='text' required='true' style='width:70%' name='variety' placeholder='insert  color and/or mobile capacity'><input type='text' required='true' placeHolder='price' style='width:17%' name='price' ><select><option><option value='1'>InStock <option value='0'>OutOfStock</select></br></div><button onclick='myaddFunction(this)' type='button'>add</button></div></td><td><button  type='button' onclick='myDeleteFunction(this)' class='scalable delete icon-btn delete-ticket-item'><span><span><span>Delete</span></span></span></button></td>");
 
         ;
     }
 
-    function addligneAction() {
-        
+    function editAction() {
+       
     }
 
     public function saveAction() {
@@ -104,7 +113,7 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
         $provider = '' . $this->getRequest()->getPost('provider');
         $disponible = '' . $this->getRequest()->getPost('disponible');
         $price = $this->getRequest()->getPost('price');
-       
+
 
         //on verifie que les champs ne sont pas vide
         if (isset($Product) && ($Product != '') && isset($disponible) && ($price != '')
@@ -119,6 +128,8 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
                 $itm->setData('id_provider', $provider);
                 $itm->setData('price', $price);
                 $itm->setData('dispo', $disponible);
+
+
                 $itm->save();
             } catch (Exception $exc) {
                 Mage::getSingleton('adminhtml/session')->addSuccess('Cool Ca marche !!');
