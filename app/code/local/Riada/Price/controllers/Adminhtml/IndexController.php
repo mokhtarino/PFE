@@ -70,13 +70,13 @@ function ajaxAction() {
                 $itm->setData('dispo', $disponible);
                 $itm->save();
 
-                Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('adminhtml')->__('Item was successfully saved'));
+                Mage::getSingleton('adminhtml/session')->addSuccess(Mage::helper('adminhtml')->__(' successfully saved'));
                 Mage::getSingleton('adminhtml/session')->setPriceData(false);
 
                 $this->_redirect('*/*/');
                 return;
             } catch (Exception $e) {
-                Mage::getSingleton('adminhtml/session')->addError('product and provider already associated !!!');
+                Mage::getSingleton('adminhtml/session')->addError('Duplicated entry or wrong entry');
                 Mage::getSingleton('adminhtml/session')->setpriceData($this->getRequest()->getPost());
                 $this->_redirect('*/*/edit', array('id' => $this->getRequest()->getParam('id')));
                 return;

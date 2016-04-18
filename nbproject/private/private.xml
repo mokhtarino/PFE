@@ -9,6 +9,7 @@
             <file>file:/var/www/html/magento/app/code/local/Riada/Price/controllers/IndexController.php</file>
             <file>file:/var/www/html/magento/app/code/local/Riada/Price/Block/Adminhtml/Catalog/Product/Tab.php</file>
             <file>file:/var/www/html/magento/app/design/adminhtml/default/default/template/price/catalog/product/tab.phtml</file>
+            <file>file:/var/www/html/magento/app/design/adminhtml/default/default/template/price/catalog/product/tabEdit.phtml</file>
         </group>
     </open-files>
 </project-private>

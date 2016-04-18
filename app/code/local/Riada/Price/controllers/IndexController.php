@@ -12,10 +12,14 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
 
     function savedAction() {
         $array = $this->getRequest()->getPost('mytable');
+        $listID = $this->getRequest()->getPost('lesID');
         $product = $this->getRequest()->getPost('prodId');
         $arr = $this->reArrayAction($array);
+
         if (!empty($array)) {
             $n = 0;
+            $index = 0;
+            $b = true;
             foreach ($arr as $a) {
 
                 $prod = $product;
@@ -23,6 +27,7 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
                 $variety = $a[1];
                 $price = $a[2];
                 $avail = $a[3];
+
                 if (isset($prod) && $prod != '') {
                     if (isset($avail) && $avail != '' && isset($variety) && $variety != '' && isset($price) && $price != '') {
                         $test = false;
@@ -32,7 +37,7 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
 
 
 
-                            $itm = Mage::getModel('price/price');
+                            $itm = Mage::getModel('price/price')->load($listID[$index]);
 
                             $itm->setData('id_product', $prod);
                             $itm->setData('id_provider', $prov);
@@ -40,19 +45,21 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
                             $itm->setData('availability', $avail);
                             $itm->setData('variety', $variety);
                             $itm->save();
+                            $index++;
                             $n++;
-                            echo "row" . ($n + 1) . "added successfuly \n";
+                            echo "row " . ($n ) . " added successfuly \n";
                         } catch (Exception $e) {
                             Mage::getSingleton('adminhtml/session')->addError("Message");
-                            echo " duplicated or incorrect  entry at row :" . ($n + 1);
+                            echo " duplicated or incorrect  entry started at row :" . ($n + 1);
                             break;
                         }
                     } else {
-                        echo " all fields are required ";
+                        echo " You have some empty fields ";
                         break;
                     }
                 } else {
                     echo "you mast save the product to choose a provider";
+                    break;
                 }
             }
         } else
@@ -97,14 +104,30 @@ class Riada_Price_IndexController extends Mage_Core_Controller_Front_Action {
 
         echo ("
 </select></td>
-       <td><div><id >1</id>
-<input type='text' required='true' style='width:70%' name='variety' placeholder='insert  color and/or mobile capacity'><input type='text' required='true' placeHolder='price' style='width:17%' name='price' ><select><option><option value='1'>InStock <option value='0'>OutOfStock</select></br></div><button onclick='myaddFunction(this)' type='button'>add</button></div></td><td><button  type='button' onclick='myDeleteFunction(this)' class='scalable delete icon-btn delete-ticket-item'><span><span><span>Delete</span></span></span></button></td>");
+       <td><div><id hidden></id>
+<input type='text' required='true' style='width:70%' name='variety' placeholder='insert  color and/or mobile capacity'><input type='text' required='true' placeHolder='price' style='width:17%' name='price' ><select style='width:11%'><option><option value='1'>InStock <option value='0'>OutOfStock</select></br></div><button onclick='myaddFunction(this)' type='button'>add</button></div></td><td><button id='del' type='button' onclick='myDeleteFunction(this)'  class='scalable delete icon-btn delete-ticket-item'><span><span><span>Delete</span></span></span></button></td>");
 
         ;
     }
 
-    function editAction() {
-       
+    function DeleteBAction() {
+        
+        $idprov = $this->getRequest()->getPost('provdel');
+        $idProd = $this->getRequest()->getPost('prodId');
+        var_dump($idprov);
+        var_dump($idProd);
+        
+        $collectProv = Mage::getModel('price/price')->getCollection()
+           ->addFieldToFilter('id_provider', array('eq'=>$idprov))
+           ->addFieldToFilter('id_product', array('eq'=>$idProd)); 
+                
+                
+
+        ;
+        var_dump($collectProv);
+        foreach ($collectProv as $ccitem) {
+            $ccitem->delete();
+        }
     }
 
     public function saveAction() {

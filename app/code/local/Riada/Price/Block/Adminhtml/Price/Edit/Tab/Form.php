@@ -6,9 +6,9 @@ class Riada_Price_Block_Adminhtml_Price_Edit_Tab_Form extends Mage_Adminhtml_Blo
         $form = new Varien_Data_Form();
         $this->setForm($form);
         $collection = Mage::getModel('catalog/product')->getCollection()->addAttributeToSelect('*');
-        $provider= Mage::getModel('riyada_imei/provider')->getCollection();
-        $option=Mage::getModel('price/price')->toOptionArray($collection);
-        $optionProvider=Mage::getModel('price/price')->toOptionArray($provider);
+        $provider = Mage::getModel('riyada_imei/provider')->getCollection();
+        $option = Mage::getModel('price/price')->toOptionArray($collection);
+        $optionProvider = Mage::getModel('price/price')->toOptionArray($provider);
         $fieldset = $form->addFieldset('price_form', array('legend' => 'Item information'));
 
 
@@ -16,15 +16,22 @@ class Riada_Price_Block_Adminhtml_Price_Edit_Tab_Form extends Mage_Adminhtml_Blo
         $fieldset->addField('id_product', 'select', array(
             'label' => 'Product',
             'name' => 'product',
-            
-            'required'  => true,
-            'values' =>$option,
+            'required' => true,
+            'values' => $option,
+            'disabled'=>true,
         ));
         $fieldset->addField('id_provider', 'select', array(
             'label' => 'Provider',
             'name' => 'provider',
             'required' => true,
             'values' => $optionProvider,
+            'disabled'=>true,
+        ));
+         $fieldset->addField('variety', 'text', array(
+            'label' => 'variety',
+            'class' => 'required-entry',
+            'required' => true,
+            'name' => 'variety',
         ));
         $fieldset->addField('price', 'text', array(
             'label' => 'price',
@@ -32,9 +39,9 @@ class Riada_Price_Block_Adminhtml_Price_Edit_Tab_Form extends Mage_Adminhtml_Blo
             'required' => true,
             'name' => 'price',
         ));
-
-        $fieldset->addField('dispo', 'select', array(
-            'label' => 'Disponibility',
+       
+        $fieldset->addField('availability', 'select', array(
+            'label' => 'Availability',
             'name' => 'disponible',
             'required' => true,
             'values' => array(

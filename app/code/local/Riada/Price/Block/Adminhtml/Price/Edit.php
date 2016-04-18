@@ -10,8 +10,8 @@ class Riada_Price_Block_Adminhtml_Price_Edit extends
         //et le meme controlleur
         $this->_controller = 'adminhtml_price';
         //on definit les labels pour les boutons save et les boutons delete
-        $this->_updateButton('save', 'label','save association');
-        $this->_updateButton('delete', 'label', 'delete association');
+        $this->_updateButton('save', 'label','save ');
+        $this->_updateButton('delete', 'label', 'delete ');
     }
        /* Ici,  on regarde si on a transmit un objet au formulaire,
             afin de mettre le bon texte dans le  header (Editer ou
@@ -20,7 +20,7 @@ class Riada_Price_Block_Adminhtml_Price_Edit extends
     {
         if( Mage::registry('price_data')&&Mage::registry('price_data')->getId())
          {
-              return 'Edit the association product-provider '.$this->htmlEscape(
+              return 'Edit product variety '.$this->htmlEscape(
               Mage::registry('price_data')->getTitle()).'<br />';
          }
          else

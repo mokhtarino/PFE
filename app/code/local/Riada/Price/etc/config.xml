@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Riada_Price>
-            <version>1.0.0</version>
+            <version>0.0.1</version>
         </Riada_Price>
     </modules>
     <frontend>
@@ -84,6 +84,13 @@
             
             
         </blocks>
+         <resources>
+            <riada_price_setup> 
+                <setup>
+                    <module>Riada_Price</module>
+                </setup>
+            </riada_price_setup>
+        </resources>
             
     </global>
 </config>
